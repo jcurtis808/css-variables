@@ -10,6 +10,6 @@ function handleChange(e) {
     cssRoot.style.setProperty(`--${this.name}`, `${e.target.value}${suffix}`) 
 }
 
-//Add eventListeners for each input using forEach 
+//Add eventListeners for each input using forEach. Used 'input' as event to update as you change the input (slider or color)
 inputs.forEach(input => input.addEventListener('input', handleChange));
 
